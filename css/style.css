@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+
+    /* ### Accent */
+
+    --blue: hsl(248, 32%, 49%);
+
+    /* ### Neutral */
+
+    --dark-blue: hsl(249, 10%, 26%); 
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--red);
+    background-image: url(/images/bg-intro-desktop.png);
+}
+
+/* CONTAINER CLASS */
+.container {
+    margin: auto;
+    padding: 0.75rem;
+}
+
+/* MAIN CONTENT */
+#main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* INTRODUCTION */
+#introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* MAIN TITLE */
+#main-title {
+    color: white;
+    max-width: 47rem;
+    line-height: 1.1;
+    font-size: clamp(2rem, 5vw, 5rem);
+}
+
+/* ABOUT */
+#about {
+    color: white;
+    max-width: 62rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+/* SIGN-UP SECTION */
+#sign-up-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3.5rem;
+    max-width: 35rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+/* CLAIM BTN */
+#claim-btn {
+    cursor: pointer;
+}
+
+/* INPUT */
+input {
+    padding: 1.5rem;
+    text-indent: 1rem;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+input::placeholder {
+    font-weight: 700;
+    text-indent: 1rem;
+}
