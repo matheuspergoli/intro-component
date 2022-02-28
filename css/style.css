@@ -160,6 +160,10 @@ input.error {
 
 }
 
+input.error::placeholder {
+    color: var(--red);
+}
+
 /* ERROR MSG */
 .error-msg {
     display: none;
