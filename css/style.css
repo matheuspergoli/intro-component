@@ -80,7 +80,7 @@ body {
 #sign-up-section {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     max-width: 55rem;
 }
 
@@ -92,6 +92,7 @@ body {
     border-radius: 1rem;
     background-color: white;
     padding: clamp(2.5rem, 5vw, 4rem);
+    box-shadow: 1px 7px rgba(0, 0, 0, 0.2);
 }
 
 /* TRY IT FREE */
@@ -102,6 +103,11 @@ body {
     text-align: center;
     border-radius: 1rem;
     background-color: var(--blue);
+    box-shadow: 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+#try-it-free > span {
+    font-weight: 600;
 }
 
 /* CLAIM BTN */
@@ -126,7 +132,13 @@ body {
 #terms {
     text-align: center;
     color: var(--grayish-blue);
-    font-size: clamp(1rem, 5vw, 1rem);
+    font-size: clamp(1rem, 5vw, 1.3rem);
+}
+
+#terms > a {
+    font-weight: 600;
+    color: var(--red);
+    text-decoration: none;
 }
 
 /* INPUT */
@@ -142,16 +154,4 @@ input::placeholder {
     font-weight: 700;
     text-indent: 1rem;
     color: var(--dark-blue);
-}
-
-/* TERMS AND SERVICES */
-a {
-    font-weight: 600;
-    color: var(--red);
-    text-decoration: none;
-}
-
-/* SPAN BOLD */
-span {
-    font-weight: 600;
 }
