@@ -50,6 +50,10 @@ body {
     flex-wrap: wrap;
 }
 
+#main-content > * {
+    flex: 1 1 35rem;
+}
+
 /* INTRODUCTION */
 #introduction {
     display: flex;
@@ -77,6 +81,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    max-width: 55rem;
 }
 
 /* SIGN-UP FORM */
@@ -84,9 +89,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 3.5rem;
     border-radius: 1rem;
     background-color: white;
+    padding: clamp(2.5rem, 5vw, 3.5rem);
 }
 
 /* TRY IT FREE */
@@ -94,6 +99,7 @@ body {
     color: white;
     padding: 1.5rem;
     font-size: 2rem;
+    text-align: center;
     border-radius: 1rem;
     background-color: var(--blue);
 }
@@ -109,6 +115,7 @@ body {
     border-radius: 5px;
     transition-duration: 200ms;
     background-color: var(--green);
+    font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 #claim-btn:hover {
@@ -119,11 +126,13 @@ body {
 #terms {
     text-align: center;
     color: var(--grayish-blue);
+    font-size: clamp(1rem, 5vw, 1rem);
 }
 
 /* INPUT */
 input {
     padding: 1.5rem;
+    font-weight: 700;
     text-indent: 1rem;
     border-radius: 4px;
     border: 1px solid var(--grayish-blue);
