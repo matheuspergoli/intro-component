@@ -33,3 +33,13 @@
         width: 1320px;
     }
 }
+
+@media (max-width: 768px) {
+    #main-content {
+        gap: 5rem;
+    }
+
+    #introduction {
+        text-align: center;
+    }
+}
